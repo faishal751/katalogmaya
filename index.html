@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Katalog Rumah PT Maya Ananda Lestari
+  </title>
+  <style>
+   :root { --ink:#24221f; --gold:#aa8550; --cream:#f6f2e9; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:'DM Sans',sans-serif; color:var(--ink); }
+    h1,h2,h3 { font-family:'Fraunces',serif; }
+    .eyebrow { letter-spacing:.2em; text-transform:uppercase; }
+    .listing-card { transition:transform .25s ease,box-shadow .25s ease; }
+    .listing-card:hover { transform:translateY(-5px); box-shadow:0 18px 42px #28201819; }
+    .listing-card:focus-visible,.close-button:focus-visible,.back-button:focus-visible {
+      outline:3px solid #aa8550; outline-offset:4px;
+    }
+    .brand-logo-frame { display:flex; align-items:center; justify-content:center; width:88px; height:88px; padding:10px; background:#fff; border:1px solid #d8bb82; border-radius:18px; box-shadow:0 8px 22px #28201812; }
+    .cover { width:100%; aspect-ratio:4/4.35; object-fit:cover; object-position:center; background:#e7e0d5; }
+    .detail-cover { width:100%; max-height:680px; object-fit:contain; background:#e8e3da; }
+    [data-template-id^="interior-"] { aspect-ratio:4/5; height:auto; object-fit:cover; object-position:center; }
+    .modal-shell { position:fixed; inset:0; z-index:30; display:flex; align-items:center; justify-content:center; padding:18px; background:#171512cf; }
+    .modal-shell[hidden],.detail-panel[hidden] { display:none !important; }
+    .modal-window { width:min(1040px,100%); max-height:calc(94 * min(var(--vh, 1vh), 1vh)); overflow:auto; background:#f6f2e9; border-radius:16px; }
+    .placeholder { min-height:135px; border:1px dashed #b39b78; background:#eee8dc; }
+    .contact-panel { background:linear-gradient(135deg,#f1e8d9,#faf7f0); }
+    .contact-panel svg { width:18px; height:18px; stroke-width:2.2; }
+    .gallery-photo { cursor:zoom-in; }
+    .temporary-photo-label { display:block; padding:6px 10px 8px; color:#625b51; background:#fff; font:600 12px/1.2 'DM Sans',sans-serif; letter-spacing:.04em; }
+    .temporary-photo-label.is-hidden { display:none; }
+    .catalog-cover-label { position:absolute; top:12px; left:12px; z-index:2; padding:4px 8px; color:#fff; background:#171512e8; border:1px solid #fff8; border-radius:999px; font:700 11px/1.2 'DM Sans',sans-serif; letter-spacing:.06em; pointer-events:none; }
+    .catalog-cover-label.is-hidden { display:none; }
+    .lightbox-shell { position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center; padding:20px; background:#0c0b0ae8; }
+    .lightbox-shell[hidden] { display:none !important; }
+    .lightbox-image { width:auto; max-width:92vw; max-height:calc(78 * min(var(--vh, 1vh), 1vh)); object-fit:contain; }
+    .lightbox-close { position:absolute; top:18px; right:18px; }
+    @media(max-width:640px) {
+      .lightbox-shell { padding:14px; }
+      .lightbox-image { max-width:96vw; max-height:72 * min(var(--vh, 1vh), 1vh); }
+    }
+    @media(max-width:640px) {
+      .modal-shell { padding:0; align-items:stretch; }
+      .modal-window { max-height:none; width:100%; border-radius:0; }
+      .detail-cover { max-height:460px; }
+    }
+    @media(prefers-reduced-motion:reduce) { .listing-card { transition:none; } }
+  </style>
+  <style>
+   /* Portable version: no Canva/SDK dependencies */
+.mx-auto{margin-left:auto;margin-right:auto}.max-w-7xl{max-width:80rem}
+.max-w-3xl{max-width:48rem}.max-w-xl{max-width:36rem}.w-full{width:100%}
+.min-h-screen{min-height:100vh}.min-w-0{min-width:0}.shrink-0{flex-shrink:0}
+.flex{display:flex}.grid{display:grid}.block{display:block}.hidden{display:none}
+.items-center{align-items:center}.items-end{align-items:flex-end}.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}.flex-col{flex-direction:column}.gap-2{gap:.5rem}.gap-3{gap:.75rem}
+.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}
+.p-3{padding:.75rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}
+.py-8{padding-top:2rem;padding-bottom:2rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}
+.pt-14{padding-top:3.5rem}.pb-10{padding-bottom:2.5rem}.pb-20{padding-bottom:5rem}
+.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-7{margin-top:1.75rem}.mt-10{margin-top:2.5rem}
+.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-5{margin-bottom:1.25rem}.mb-7{margin-bottom:1.75rem}
+.border{border-width:1px;border-style:solid}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}
+.rounded-xl{border-radius:.75rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}
+.overflow-hidden{overflow:hidden}.relative{position:relative}.sticky{position:sticky}.top-0{top:0}.z-10{z-index:10}
+.leading-tight{line-height:1.25}.leading-snug{line-height:1.375}.leading-relaxed{line-height:1.625}
+.font-semibold{font-weight:600}.font-bold{font-weight:700}.text-left{text-align:left}.text-sm{font-size:.875rem}
+.float-right{float:right}.object-contain{object-fit:contain}.object-cover{object-fit:cover}
+.h-20{height:5rem}.h-32{height:8rem}.w-20{width:5rem}.w-80{width:20rem}
+.text-white{color:#fff}.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.08)}.shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}
+.bg-white{background:#fff}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:pt-20{padding-top:5rem}.sm\:pb-14{padding-bottom:3.5rem}.sm\:pb-20{padding-bottom:5rem}.sm\:p-9{padding:2.25rem}.sm\:inline-flex{display:inline-flex}.sm\:flex-row{flex-direction:row}.sm\:items-end{align-items:flex-end}.sm\:justify-between{justify-content:space-between}.sm\:items-center{align-items:center}.sm\:items-end{align-items:flex-end}}
+@media(min-width:1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:justify-between{justify-content:space-between}.lg\:block{display:block}}
+@media(min-width:768px){.md\:grid-cols-\[1fr_\.78fr\]{grid-template-columns:1fr .78fr}}
+  </style>
+ </head>
+ <body class="w-full min-h-screen" style="background: rgb(246, 242, 233);">
+  <header class="canva-header w-full border-b border-[#ddd3c2]" style="background: rgb(246, 242, 233);">
+   <div class="mx-auto max-w-7xl px-5 sm:px-8 py-7 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-4 min-w-0">
+     <span class="brand-logo-frame shrink-0">
+      <img alt="Logo resmi PT Maya Ananda Lestari berwarna biru tua dan emas" class="canva-image w-full h-full object-contain" loading="lazy" src="assets/logo.png"/>
+     </span>
+     <span class="canva-text font-semibold tracking-wide" style="color: rgb(36, 34, 31); font-weight: 700; font-style: normal; font-size: 16px;">
+      PT Maya Ananda Lestari
+     </span>
+    </div>
+    <nav aria-label="Navigasi kontak" class="canva-menu flex items-center gap-3 sm:gap-5" style="color: rgb(36, 34, 31);">
+     <span class="canva-tag eyebrow hidden lg:block" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+      Pilihan hunian
+     </span>
+     <a class="canva-link hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-[#24221f] hover:text-[#987343] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#aa8550]" href="#kontak" style="color: rgb(36, 34, 31);">
+      <span class="canva-text" style="color: rgb(36, 34, 31); font-weight: 600; font-style: normal; font-size: 16px;">
+       Kontak
+      </span>
+     </a>
+     <a class="canva-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#aa8550]" href="https://wa.me/6283856806064" rel="noopener noreferrer" style="background: rgb(23, 59, 99); color: rgb(255, 255, 255); font-weight: 700;" target="_blank">
+      <i aria-hidden="true" data-lucide="message-circle">
+      </i>
+      <span class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">
+       Hubungi Kami
+      </span>
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="w-full">
+   <section class="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-10 sm:pt-20 sm:pb-14">
+    <p class="canva-text eyebrow mb-5" style="color: rgb(152, 115, 67); font-weight: 700; font-style: normal; font-size: 12px;">
+     Koleksi properti
+    </p>
+    <h1 class="canva-text max-w-3xl leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 32px;">
+     Katalog Rumah PT Maya Ananda Lestari
+    </h1>
+    <p class="canva-text max-w-xl leading-relaxed" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 17px;">
+     Pilih rumah yang menarik perhatian Anda untuk melihat foto dan detail yang tersedia.
+    </p>
+    <div class="mt-10 h-px bg-[#d8cbb7]">
+    </div>
+    <p class="canva-text mt-7" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 14px;">
+     Jelajahi 8 pilihan rumah  &middot;  Klik kartu untuk melihat detail
+    </p>
+   </section>
+   <section aria-label="Daftar properti" class="mx-auto max-w-7xl px-5 sm:px-8 pb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="1" type="button">
+      <img alt="Materi promosi rumah murah di Cimahi dengan harga Rp300 juta" class="canva-image cover" loading="lazy" src="assets/cover-1.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Cimahi
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah Cimahi Murah
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp300 juta
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="2" type="button">
+      <img alt="Materi promosi rumah Panggilan Warga Desil 10 dengan harga Rp875 juta" class="canva-image cover" loading="lazy" src="assets/cover-2.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Detail menyusul
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Panggilan Warga Desil 10
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp875 juta
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="3" type="button">
+      <img alt="Materi promosi rumah di Padalarang dengan harga 575 nego" class="canva-image cover" loading="lazy" src="assets/cover-3.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Padalarang
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah Mewah Padalarang
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 16px;">
+         575 (nego) &middot; satuan menyusul
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="4" type="button">
+      <img alt="Materi promosi rumah dengan harga 950 juta nego" class="canva-image cover" loading="lazy" src="assets/cover-4.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Detail menyusul
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah Harga 950 JT
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp950 juta &middot; nego
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="5" type="button">
+      <img alt="Materi promosi rumah murah dengan harga 590 juta" class="canva-image cover" loading="lazy" src="assets/cover-5.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Detail menyusul
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah Murah, Dalamnya Istimewah
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp590 juta
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="6" type="button">
+      <img alt="Materi promosi rumah di Cimahi-Bandung dengan harga 1,4 miliar nego" class="canva-image cover" loading="lazy" src="assets/cover-6.jpg"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Cimahi&ndash;Bandung
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah Cimahi&ndash;Bandung
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp1,4 miliar &middot; nego
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="7" type="button">
+      <img alt="Materi promosi rumah di Cimahi dengan harga 800 juta all in" class="canva-image cover" loading="lazy" src="assets/cover-7.png"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Cimahi
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah di Cimahi
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp800 juta &middot; all in
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+     <button aria-haspopup="dialog" class="listing-card relative text-left rounded-xl overflow-hidden bg-white border border-[#e4dbce]" data-listing="8" type="button">
+      <img alt="Materi promosi rumah di Cimahi Bandung dengan harga Rp1,05 miliar dan kolase foto ruangan" class="canva-image cover" loading="lazy" src="assets/cover-8.png"/>
+      <span class="block p-5">
+       <span class="canva-text eyebrow block mb-2" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 11px;">
+        Cimahi Bandung
+       </span>
+       <span class="canva-text block font-semibold leading-snug min-h-[3.2em]" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+        Rumah di Cimahi Bandung
+       </span>
+       <span class="block mt-4 pt-4 border-t border-[#eee7dc]">
+        <span class="canva-text font-bold" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 17px;">
+         Rp1,05 miliar
+        </span>
+        <span aria-hidden="true" class="float-right text-[#aa8550]">
+         &nearrow;
+        </span>
+       </span>
+      </span>
+     </button>
+    </div>
+   </section>
+   <section class="mx-auto max-w-7xl px-5 sm:px-8 pb-20" id="kontak" style="background: rgb(241, 232, 217);">
+    <div class="contact-panel rounded-2xl border border-[#d8cbb7] p-6 sm:p-9 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-7">
+     <div class="flex items-center gap-4">
+      <span class="brand-logo-frame shrink-0">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-full h-full object-contain" loading="lazy" src="assets/logo.png"/>
+      </span>
+      <div>
+       <p class="canva-text eyebrow mb-2" style="color: rgb(152, 115, 67); font-weight: 700; font-style: normal; font-size: 12px;">
+        Hubungi kami
+       </p>
+       <h2 class="canva-text leading-tight" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 26px;">
+        Mari temukan rumah yang tepat
+       </h2>
+       <p class="canva-text mt-2 max-w-xl" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 15px;">
+        Tim PT Maya Ananda Lestari siap membantu memberikan informasi lebih lanjut.
+       </p>
+      </div>
+     </div>
+     <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+      <a class="canva-button inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-sm hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#aa8550]" href="https://wa.me/6283856806064" rel="noopener noreferrer" style="background: rgb(23, 59, 99); color: rgb(255, 255, 255); font-weight: 700;" target="_blank">
+       <i aria-hidden="true" data-lucide="message-circle">
+       </i>
+       <span class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">
+        083856806064
+       </span>
+      </a>
+      <a class="canva-link inline-flex items-center justify-center gap-2 rounded-full border border-[#aa8550] px-5 py-3 font-semibold text-[#24221f] hover:bg-[#efe5d5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#aa8550]" href="mailto:mayaanandalestariexport@gmail.com" style="color: rgb(36, 34, 31); font-weight: 600;">
+       <i aria-hidden="true" data-lucide="mail">
+       </i>
+       <span class="canva-text" style="color: rgb(36, 34, 31); font-weight: 600; font-style: normal; font-size: 16px;">
+        Email kami
+       </span>
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="border-t border-[#ddd3c2] px-5 sm:px-8 py-8">
+   <div class="mx-auto max-w-7xl flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+    <p class="canva-text" style="color: rgb(113, 105, 93); font-weight: 400; font-style: normal; font-size: 13px;">
+     PT Maya Ananda Lestari &middot; Informasi lebih lanjut untuk setiap rumah menyusul.
+    </p>
+    <div class="canva-panel flex flex-col sm:items-end gap-2 text-sm" style="color: rgb(98, 91, 81);">
+     <a class="canva-link font-semibold text-[#987343] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#aa8550]" href="https://wa.me/6283856806064" rel="noopener noreferrer" style="color: rgb(152, 115, 67); font-weight: 700; font-style: normal; font-size: 16px;" target="_blank">
+      WhatsApp 083856806064
+     </a>
+     <a class="canva-link text-[#625b51] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#aa8550]" href="mailto:mayaanandalestariexport@gmail.com" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+      mayaanandalestariexport@gmail.com
+     </a>
+    </div>
+   </div>
+  </footer>
+  <div class="modal-shell" hidden="" id="modal">
+   <div aria-label="Detail properti" aria-modal="true" class="modal-window shadow-2xl" role="dialog">
+    <div class="sticky top-0 z-10 flex justify-between items-center gap-4 px-5 sm:px-8 py-4 bg-[#f6f2e9] border-b border-[#ded3c2]">
+     <button class="back-button flex items-center gap-2 text-left" id="back-button" type="button">
+      <span aria-hidden="true">
+       &larr;
+      </span>
+      <span class="canva-text" style="color: rgb(36, 34, 31); font-weight: 600; font-style: normal; font-size: 14px;">
+       Kembali ke katalog
+      </span>
+     </button>
+     <button aria-label="Tutup detail" class="close-button w-10 h-10 rounded-full border border-[#c9b99f] flex items-center justify-center" id="close-button" type="button">
+      ✕
+     </button>
+    </div>
+    <article class="detail-panel" data-panel="1" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr] gap-0">
+      <img alt="Foto promosi rumah Cimahi murah, Rp300 juta" class="canva-image detail-cover" loading="lazy" src="assets/cover-1.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Cimahi
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah Cimahi Murah
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp300 juta
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 1 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-01-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="2" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah Panggilan Warga Desil 10, Rp875 juta" class="canva-image detail-cover" loading="lazy" src="assets/cover-2.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Lokasi: Detail menyusul
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Panggilan Warga Desil 10
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp875 juta
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 8" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-08.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 8
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 9" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-09.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 9
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 10" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-10.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 10
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 11" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-11.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 11
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 12" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-12.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 12
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 13" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-13.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 13
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 2 - 14" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-02-14.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 14
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="3" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah di Padalarang, harga 575 nego" class="canva-image detail-cover" loading="lazy" src="assets/cover-3.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Padalarang
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah Mewah Padalarang
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 22px;">
+        575 (nego) &middot; satuan harga tidak tercantum
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="col-span-2 p-4 rounded-xl border border-dashed border-[#d8cbb7]">
+        Foto galeri rumah ini belum tersedia di file foto yang diupload.
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="4" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah dengan harga 950 juta nego" class="canva-image detail-cover" loading="lazy" src="assets/cover-4.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Lokasi: Detail menyusul
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah Harga 950 JT
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp950 juta &middot; nego
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 4 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-04-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 4 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-04-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 4 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-04-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 4 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-04-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="5" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah murah, harga 590 juta" class="canva-image detail-cover" loading="lazy" src="assets/cover-5.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Lokasi: Detail menyusul
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah Murah, Dalamnya Istimewah
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp590 juta
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 8" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-08.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 8
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 9" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-09.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 9
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 10" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-10.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 10
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 5 - 11" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-05-11.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 11
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="6" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah Cimahi-Bandung, harga 1,4 miliar nego" class="canva-image detail-cover" loading="lazy" src="assets/cover-6.jpg"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Cimahi&ndash;Bandung
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah Cimahi&ndash;Bandung
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp1,4 miliar &middot; nego
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 8" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-08.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 8
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 9" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-09.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 9
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 10" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-10.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 10
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 11" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-11.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 11
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 12" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-12.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 12
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 13" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-13.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 13
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 14" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-14.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 14
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 15" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-15.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 15
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 16" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-16.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 16
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 6 - 17" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-06-17.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 17
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="7" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah di Cimahi, harga 800 juta all in" class="canva-image detail-cover" loading="lazy" src="assets/cover-7.png"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Cimahi
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah di Cimahi
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp800 juta &middot; all in
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Informasi spesifikasi dan alamat lengkap: Detail menyusul.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 7 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-07-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <article class="detail-panel" data-panel="8" hidden="">
+     <div class="grid md:grid-cols-[1fr_.78fr]">
+      <img alt="Foto promosi rumah di Cimahi Bandung, harga Rp1,05 miliar, dengan kolase ruangan" class="canva-image detail-cover" loading="lazy" src="assets/cover-8.png"/>
+      <div class="p-6 sm:p-9 flex flex-col justify-center">
+       <img alt="Logo resmi PT Maya Ananda Lestari" class="canva-image w-20 h-20 object-contain self-start mb-5" loading="lazy" src="assets/logo.png"/>
+       <p class="canva-text eyebrow mb-3" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 12px;">
+        Cimahi Bandung
+       </p>
+       <h2 class="canva-text leading-tight mb-5" style="color: rgb(36, 34, 31); font-weight: 500; font-style: normal; font-size: 24px;">
+        Rumah di Cimahi Bandung
+       </h2>
+       <p class="canva-text font-bold mb-7" style="color: rgb(152, 115, 67); font-weight: 400; font-style: normal; font-size: 26px;">
+        Rp1,05 miliar
+       </p>
+       <p class="canva-text" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+        Materi promosi mencantumkan SHM, luas tanah 96 m&sup2;, luas bangunan 160 m&sup2;, 4 kamar tidur, 2 kamar mandi, carport, dan kitchen set.
+       </p>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9 border-t border-[#ded3c2]">
+      <h3 class="canva-text mb-5" style="color: rgb(36, 34, 31); font-weight: 400; font-style: normal; font-size: 19px;">
+       Galeri rumah ini
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 1" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-01.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 1
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 2" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-02.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 2
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 3" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-03.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 3
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 4" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-04.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 4
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 5" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-05.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 5
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 6" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-06.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 6
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 7" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-07.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 7
+         </span>
+        </div>
+       </div>
+       <div class="rounded-xl overflow-hidden border border-[#d8cbb7] bg-white">
+        <img alt="Foto Rumah 8 - 8" class="canva-image w-full object-cover" loading="lazy" src="assets/rumah-08-08.jpg"/>
+        <div class="p-3">
+         <span class="canva-text block text-sm font-semibold">
+          Foto 8
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </article>
+    <div class="canva-panel px-6 sm:px-9 py-6 border-t border-[#ded3c2] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" style="background: rgb(246, 242, 233);">
+     <span class="canva-text text-sm font-semibold" style="color: rgb(98, 91, 81); font-weight: 600; font-style: normal; font-size: 16px;">
+      Hubungi kami untuk informasi lebih lanjut
+     </span>
+     <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+      <a class="canva-link font-semibold text-[#987343] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#aa8550]" href="https://wa.me/6283856806064" rel="noopener noreferrer" style="color: rgb(152, 115, 67); font-weight: 700; font-style: normal; font-size: 16px;" target="_blank">
+       WhatsApp 083856806064
+      </a>
+      <a class="canva-link text-[#625b51] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#aa8550]" href="mailto:mayaanandalestariexport@gmail.com" style="color: rgb(98, 91, 81); font-weight: 400; font-style: normal; font-size: 16px;">
+       Email kami
+      </a>
+     </div>
+    </div>
+   </div>
+   <div aria-label="Preview foto interior" aria-modal="true" class="lightbox-shell" hidden="" id="lightbox" role="dialog">
+    <button aria-label="Tutup preview" class="lightbox-close w-11 h-11 rounded-full bg-white text-[#24221f] text-2xl shadow-lg" id="lightbox-close" type="button">
+     &times;
+    </button>
+    <figure class="flex max-h-full flex-col items-center gap-4">
+     <img alt="" class="lightbox-image rounded-xl" id="lightbox-image"/>
+     <figcaption class="canva-text text-center font-semibold text-white" id="lightbox-label">
+     </figcaption>
+    </figure>
+   </div>
+   <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxLabel = document.getElementById('lightbox-label');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const roomNames = { living: 'Ruang Tamu', bedroom: 'Kamar Tidur', kitchen: 'Dapur', bathroom: 'Kamar Mandi' };
+    document.querySelectorAll('[data-template-id^="cover-"]').forEach((image, index) => {
+      const label = document.createElement('span');
+      label.className = 'catalog-cover-label';
+      label.dataset.catalogLabel = 'true';
+      label.textContent = 'Katalog ' + (index + 1);
+      image.insertAdjacentElement('afterend', label);
+    });
+    let lightboxPreviousFocus = null;
+    function openLightbox(image) {
+      lightboxPreviousFocus = image;
+      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.alt = image.alt || 'Preview foto interior';
+      const key = image.dataset.templateId.split('-').pop();
+      lightboxLabel.textContent = image.dataset.roomLabel || roomNames[key] || 'Foto interior';
+      lightbox.hidden = false;
+      lightboxClose.focus();
+    }
+    function closeLightbox() {
+      lightbox.hidden = true;
+      if (lightboxPreviousFocus) lightboxPreviousFocus.focus();
+    }
+    document.querySelectorAll('[data-template-id^="interior-"]').forEach(image => {
+      image.classList.add('gallery-photo');
+      image.tabIndex = 0;
+      image.setAttribute('role', 'button');
+      image.setAttribute('aria-label', 'Preview foto ' + (roomNames[image.dataset.templateId.split('-').pop()] || 'interior'));
+      image.addEventListener('click', () => openLightbox(image));
+      image.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox(image); } });
+    });
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
+    const modal = document.getElementById('modal');
+    const panels = [...document.querySelectorAll('.detail-panel')];
+    const closeButton = document.getElementById('close-button');
+    let previousFocus = null;
+
+    document.querySelectorAll('[data-listing]').forEach(card => {
+      card.addEventListener('click', () => {
+        previousFocus = card;
+        panels.forEach(panel => { panel.hidden = panel.dataset.panel !== card.dataset.listing; });
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        modal.querySelector('.modal-window').scrollTop = 0;
+        closeButton.focus();
+      });
+    });
+
+    function closeDetail() {
+      if (modal.hidden) return;
+      modal.hidden = true;
+      document.body.style.overflow = '';
+      if (previousFocus) previousFocus.focus();
+    }
+
+    closeButton.addEventListener('click', closeDetail);
+    document.getElementById('back-button').addEventListener('click', closeDetail);
+    modal.addEventListener('click', event => { if (event.target === modal) closeDetail(); });
+    if (window.lucide) lucide.createIcons();
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !lightbox.hidden) { closeLightbox(); return; }
+      if (modal.hidden) return;
+      if (event.key === 'Escape') closeDetail();
+      if (event.key === 'Tab') {
+        const controls = [document.getElementById('back-button'), closeButton];
+        if (event.shiftKey && document.activeElement === controls[0]) {
+          event.preventDefault(); controls[1].focus();
+        } else if (!event.shiftKey && document.activeElement === controls[1]) {
+          event.preventDefault(); controls[0].focus();
+        }
+      }
+    });
+   </script>
+  </div>
+ <script>document.addEventListener("error",e=>{if(e.target.tagName==="IMG"&&e.target.src.includes("rumah-03-")){const c=e.target.closest(".rounded-xl");if(c)c.remove();else e.target.remove();}},true);</script></body>
+</html>
